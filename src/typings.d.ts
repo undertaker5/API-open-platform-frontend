@@ -1,3 +1,5 @@
+import UserVO = API.UserVO;
+
 declare module 'slash2';
 declare module '*.css';
 declare module '*.less';
@@ -18,3 +20,10 @@ declare module 'react-fittext';
 declare module 'bizcharts-plugin-slider';
 
 declare const REACT_APP_ENV: 'test' | 'dev' | 'pre' | false;
+
+/**
+ * 全局状态类型
+ */
+interface InitialState {
+  loginUser?: API.UserVO;
+}
